@@ -359,6 +359,11 @@ function openPopup(event) {
         <li>Name ----- : \t\t\t ${adName.value}</li>
         <li>Date ------ : \t\t\t ${bookingDate.value}</li>
         <li>Time ------ : \t\t\t ${bookingTime.value} \t\t\t AM</li>
+        <li>Duration ----- : \t\t\t ${duration} \t\t\t (Hours)</li>
+        <li>No of Adults ----- : \t\t\t ${adAdults.value}</li>
+        <li>No of Kids ------ : \t\t\t ${adKids.value}
+        <li>Need Guidence for Adults ? ---------  : \t\t\t${checkAdult.checked ? 'Yes' : 'No'}</li>
+        <li>Need Guidence for Kids ? ---------  : \t\t\t${checkKids.checked ? 'Yes' : 'No'}</li>
         <br>
         <hr>
         <li>Total Booking Cost ---- : LKR.\t\t\t ${adTotalCost.toFixed(2)}</li>

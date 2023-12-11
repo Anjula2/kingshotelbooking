@@ -47,38 +47,38 @@
         <h1 class="form-title">Room Reservation</h1>
           <section class="main-user-info">
             <section class="user-input-box">
-              <label for="fullname">Full Name</label>
+              <label>Full Name</label>
               <input type="text"
                       id="fullName"
                       name="fullName"
                       placeholder="Enter Full Name" required/>
             </section>
             <section class="user-input-box">
-              <label for="checkindate">Check-In</label>
+              <label>Check-In</label>
               <input type="date" name="checkin" value="" id="checkIn-1" required>
             </section>
             <section class="user-input-box">
-              <label for="checkoutdate">Check-Out</label>
+              <label>Check-Out</label>
               <input type="date" name="checkout" value="" id="checkout" required>
             </section>
             <section class="user-input-box">
-              <label for="rAdult">Adult</label>
+              <label>Adult</label>
               <input type = "number" placeholder="Adult" min = "1" id="R_adult-1">
             </section>
             <section class="user-input-box">
-              <label for="rChild">Child</label>
+              <label>Child</label>
               <input type = "number" placeholder="child" min = "1" id="R_child-1">
             </section>
             <section class="user-input-box">
-              <label for="Rpromocode">Promo Code</label>
+              <label>Promo Code</label>
               <input type="text"
                       id="promocode"
                       name="Rpromocode"
                       placeholder="Enter Promo Code"/>
             </section>
             <section class="user-input-box">
-                <label for="email">Email</label>
-              <input type="text"
+                <label>Email</label>
+              <input type="email"
                       id="email-1"
                       name="email"
                       placeholder="Enter email address" required/>
@@ -95,19 +95,19 @@
             <span class="reservation-title">Room Type</span>
               <section class="main-user-info">
                 <section class="user-input-box">
-                  <label for="singleR">Single Room</label>
+                  <label>Single Room</label>
                   <input type = "number" placeholder="No of Rooms" min="0" value="0" id="singleRoom">
                 </section>
               <section class="user-input-box">
-                <label for="doubleR">Double Room</label>
+                <label>Double Room</label>
                 <input type = "number" placeholder="No of Rooms" min="0" value="0" id="doubleRoom">
               </section>
               <section class="user-input-box">
-                <label for="tripleR">Triple Room</label>
+                <label>Triple Room</label>
                 <input type = "number" placeholder="No of Rooms" min="0" value="0" id="tripleRoom">
               </section>
               <section class="user-input-box">
-                <label for="extraB">Extra Bed</label>
+                <label>Extra Bed</label>
                 <input type = "number" placeholder="Extra Bed" min = "1" id="ExtraBed">
               </section>
             </section>
@@ -117,11 +117,11 @@
               <span class="reservation-title">Extra Requirements</span>
               <section class="reservation-category">
                 <input type="checkbox" name="extra_requirements" id="wifi">
-                <label for="wifi">WiFi</label>
+                <label>WiFi</label>
                 <input type="checkbox" name="extra_requirements" id="pool_view">
-                <label for="Pview">Pool View</label>
+                <label>Pool View</label>
                 <input type="checkbox" name="extra_requirements" id="garden_view">
-                <label for="Gview">Garden View</label>
+                <label>Garden View</label>
               </section>
               <h3 class="form-title">Current Booking</h3>
               <section class="line"></section>
@@ -139,55 +139,55 @@
           <h1 class="form-title">Adventure Reservation</h1>
             <section class="main-user-info">
               <section class="user-input-box">
-                <label for="Fname">Full Name</label>
+                <label>Full Name</label>
                 <input type="text"
                         id="adFullName"
                         name="adfullName"
                         placeholder="Enter Full Name" required/>
               </section>
               <section class="user-input-box">
-                <label for="LorF">Local or Foreign</label>
+                <label>Local or Foreign</label>
                 <select name="localorforeign" id="localforeign" required>
                   <option value="local" selected id="Adlocal">Local</option>
                   <option value="foreign" id="AdForeign">Foreign</option>
                 </select>
               </section>
               <section class="user-input-box">
-                <label for="ad-date">Date</label>
+                <label>Date</label>
                 <input type="date" name="date" value="" id="adDate" required>
               </section>
               <section class="user-input-box">
-                <label for="ad-time">Time (8 AM to 17 PM)</label>
+                <label>Time (8 AM to 17 PM)</label>
                 <input type="time" name="Time" value="08:00" id="time" required>
               </section>
               <section class="user-input-box">
-                <label for="Adduration">Duration (Hours)</label>
+                <label>Duration (Hours)</label>
                 <input type = "number" placeholder="Duration" min = "1" id="duration" required>
               </section>
               <section class="user-input-box">
-                <label for="Adtype">Adventure Type</label>
+                <label>Adventure Type</label>
                 <select name="adventure" id="adventure">
                   <option value="Diving" selected id="Ad_type">Diving</option>
                 </select>
               </section>
               <section class="user-input-box">
-                <label for="adAdult">Adult</label>
+                <label>Adult</label>
                 <input type = "number" placeholder="Adult" min = "1" id="Ad_adult">
               </section>
               <section class="user-input-box">
-                <label for="adChild">Child</label>
+                <label>Child</label>
                 <input type = "number" placeholder="child" min = "1" id="Ad_child">
               </section>
               <section class="user-input-box">
-                <label for="Pnum">Phone Number</label>
+                <label>Phone Number</label>
               <input type="text"
                       id="AdPhoneNum"
                       name="phonenumber"
                       placeholder="Enter Phone number" required/>
               </section>
               <section class="user-input-box">
-                  <label for="adEmail">Email</label>
-                <input type="text"
+                  <label>Email</label>
+                <input type="email"
                         id="Ademail"
                         name="email"
                         placeholder="Enter email address" required/>
@@ -213,7 +213,7 @@
 
 <section class="popup_main">
 <section class="popup" id="popup">
-  <img src="./tik_symbol.png">
+  <img src="./tik_symbol.png" alt="tik_img">
   <h4>Thank You</h4>
   <p>Your Details has been successfully submited. Thanks..!!</p>
   <fieldset class="form__container adUpdate" id="adTotalUpdate"></fieldset>
@@ -241,7 +241,7 @@
 
 <section class="lp-popupmain">
   <section class="lp-Popup" id="lpPopup">
-    <img src="./Loyalty_Points.png">
+    <img src="./Loyalty_Points.png" alt="clip_art">
     <h4>Congratulations..!!</h4>
     <p>Below is the amount of Loyalty Points received in relation to your booking.</p>
     <fieldset class="form__container lpUpdate" id="lpUpdate"></fieldset>
