@@ -669,15 +669,33 @@ table .totalcost{
         align-items: center;
     }
     .form__container{
-        width: 90%;
+        margin-left: -50px;
+        width: 360px;
     }
     .output-1{
-        margin-left: 20px;
+        margin-left: 0;
+        width: 100%;
+    }
+    .form__container .AdFormoutput{
+        margin: 20px 0;
     }
     .output-2{
-        width: 500px;
+        width: 350px;
     }
     .AdFormoutput{
-        margin-left: 20px;
+        margin-left: 0;
+        width: 100%;
     }
+    .adUpdate{
+        width: 100%;
+        margin-left: 0;
+    }
+    .btn-sec{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .popup{
+        width: 350px;
+    }
+
 }
