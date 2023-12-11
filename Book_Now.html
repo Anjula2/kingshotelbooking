@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Book Now</title>
+</head>
+<body>
+  <!--nav bar section-->
+  <nav>
+    <section class="nav_logo">
+        <a href="./index.html"><img src="./logo-gold.png" alt="logo"></a>
+    </section>
+    <ul class="nav_links">
+        <li class="link"><a href="./index.html">Home</a></li>
+        <li class="link"><a href="./hotel_branches.html">Hotel Branches</a></li>
+        <li class="link"><a href="./adventure.html">Adventures</a></li>
+        <li class="link"><a href="./Restaurants.html">Restaurants</a></li>
+        <li class="link"><a href="./Book_Now.html">Book Now</a></li>
+    </ul>
+    <img src="./king's_hotel_menu-btn.png" alt="menu button" class="menu-btn">
+</nav>
+
+<!--header section-->
+    <header class="section__container header__container-1">
+        <section class="header__image__container-1">
+            <section class="header__content-1">
+                <h1>Join with Us</h1>
+                <p>Join us to spend your free time happily and comfortably</p>
+            </section>
+        </section>
+        </header>
+
+        <!--Form section-->
+        <!--room booking form-->
+<section class="main">
+        <form method="get" id="room_booking_form">
+    <section class="form__container">
+        <h1 class="form-title">Room Reservation</h1>
+          <section class="main-user-info">
+            <section class="user-input-box">
+              <label>Full Name</label>
+              <input type="text"
+                      id="fullName"
+                      name="fullName"
+                      placeholder="Enter Full Name" required/>
+            </section>
+            <section class="user-input-box">
+              <label>Check-In</label>
+              <input type="date" name="checkin" value="" id="checkIn-1" required>
+            </section>
+            <section class="user-input-box">
+              <label>Check-Out</label>
+              <input type="date" name="checkout" value="" id="checkout" required>
+            </section>
+            <section class="user-input-box">
+              <label>Adult</label>
+              <input type = "number" placeholder="Adult" min = "1" id="R_adult-1">
+            </section>
+            <section class="user-input-box">
+              <label>Child</label>
+              <input type = "number" placeholder="child" min = "1" id="R_child-1">
+            </section>
+            <section class="user-input-box">
+              <label>Promo Code</label>
+              <input type="text"
+                      id="promocode"
+                      name="Rpromocode"
+                      placeholder="Enter Promo Code"/>
+            </section>
+            <section class="user-input-box">
+                <label>Email</label>
+              <input type="text"
+                      id="email-1"
+                      name="email"
+                      placeholder="Enter email address" required/>
+              </section>
+              <section class="user-input-box">
+                <label>Phone Number</label>
+              <input type="text"
+                      id="PhoneNum"
+                      name="username"
+                      placeholder="Enter Phone number" required/>
+              </section>
+            </section>
+          <section class="reservation-details-box">
+            <span class="reservation-title">Room Type</span>
+              <section class="main-user-info">
+                <section class="user-input-box">
+                  <label>Single Room</label>
+                  <input type = "number" placeholder="No of Rooms" min="0" value="0" id="singleRoom">
+                </section>
+              <section class="user-input-box">
+                <label>Double Room</label>
+                <input type = "number" placeholder="No of Rooms" min="0" value="0" id="doubleRoom">
+              </section>
+              <section class="user-input-box">
+                <label>Triple Room</label>
+                <input type = "number" placeholder="No of Rooms" min="0" value="0" id="tripleRoom">
+              </section>
+              <section class="user-input-box">
+                <label>Extra Bed</label>
+                <input type = "number" placeholder="Extra Bed" min = "1" id="ExtraBed">
+              </section>
+            </section>
+          </section>
+
+            <section class="reservation-details-box">
+              <span class="reservation-title">Extra Requirements</span>
+              <section class="reservation-category">
+                <input type="checkbox" name="extra_requirements" id="wifi">
+                <label>WiFi</label>
+                <input type="checkbox" name="extra_requirements" id="pool_view">
+                <label>Pool View</label>
+                <input type="checkbox" name="extra_requirements" id="garden_view">
+                <label>Garden View</label>
+              </section>
+              <h3 class="form-title">Current Booking</h3>
+              <section class="line"></section>
+              <fieldset class="form__container output-1" id="output"></fieldset>
+              <section class="form-submit-btn">
+                <button id="bookNow">Book Now</button>
+              </section>
+              </section>
+          </section>
+      </form>
+
+      <!--adventure booking form-->
+      <form method="get" id="adBookingForm">
+        <section class="form__container">
+          <h1 class="form-title">Adventure Reservation</h1>
+            <section class="main-user-info">
+              <section class="user-input-box">
+                <label>Full Name</label>
+                <input type="text"
+                        id="adFullName"
+                        name="adfullName"
+                        placeholder="Enter Full Name" required/>
+              </section>
+              <section class="user-input-box">
+                <label>Local or Foreign</label>
+                <select name="localorforeign" id="localforeign" required>
+                  <option value="local" selected id="Adlocal">Local</option>
+                  <option value="foreign" id="AdForeign">Foreign</option>
+                </select>
+              </section>
+              <section class="user-input-box">
+                <label>Date</label>
+                <input type="date" name="date" value="" id="adDate" required>
+              </section>
+              <section class="user-input-box">
+                <label>Time (8 AM to 17 PM)</label>
+                <input type="time" name="Time" value="08:00" id="time" required>
+              </section>
+              <section class="user-input-box">
+                <label>Duration (Hours)</label>
+                <input type = "number" placeholder="Duration" min = "1" id="duration" required>
+              </section>
+              <section class="user-input-box">
+                <label>Adventure Type</label>
+                <select name="adventure" id="adventure">
+                  <option value="Diving" selected id="Ad_type">Diving</option>
+                </select>
+              </section>
+              <section class="user-input-box">
+                <label>Adult</label>
+                <input type = "number" placeholder="Adult" min = "1" id="Ad_adult">
+              </section>
+              <section class="user-input-box">
+                <label>Child</label>
+                <input type = "number" placeholder="child" min = "1" id="Ad_child">
+              </section>
+              <section class="user-input-box">
+                <label>Phone Number</label>
+              <input type="text"
+                      id="AdPhoneNum"
+                      name="phonenumber"
+                      placeholder="Enter Phone number" required/>
+              </section>
+              <section class="user-input-box">
+                  <label>Email</label>
+                <input type="text"
+                        id="Ademail"
+                        name="email"
+                        placeholder="Enter email address" required/>
+                </section>
+              </section>
+            <section class="reservation-details-box">
+              <span class="reservation-title">Guidence</span>
+              <section class="reservation-category">
+                <input type="checkbox" name="guidence" id="adultGuidence">
+                <label>Adult</label>
+                <input type="checkbox" name="guidence" id="kidGuidence">
+                <label for="child_guidence">Child</label>
+              </section>
+              <h3 class="form-title">Current Booking</h3>
+              <section class="line"></section>
+              <fieldset class="form__container AdFormoutput" id="Adoutput"></fieldset>
+              <section class="form-submit-btn">
+                <button id="AdbookNow" type="submit">Book Now</button>
+              </section>
+              </section>
+            </section>
+          </form>
+</section>
+
+<section class="popup_main">
+<section class="popup" id="popup">
+  <img src="./tik_symbol.png">
+  <h4>Thank You</h4>
+  <p>Your Details has been successfully submited. Thanks..!!</p>
+  <fieldset class="form__container adUpdate" id="adTotalUpdate"></fieldset>
+  <button type="button" id="okBtn">OK</button>
+</section>
+</section>
+  <!--<section class="booking_button">
+    <a class="buttons_a" value="Total cost" id="booking-btn" style="--clr:#1e9bff"><span>Conform Booking</span><i></i></a>
+  </section>-->
+
+<section class="title-all" id="title-overall">
+<h3>Overall Booking</h3>
+<section class="line"></section>
+<fieldset class="section__container output-2" id="overall_booking"></fieldset>
+</section>
+
+<section class="btn-sec">
+  <section class="loyaltyPoints-btn">
+    <button class="lp-btn" id="loyaltyPoints">Loyalty Points</button>
+  </section>
+  <section class="favorites-btn">
+    <button class="atf-btn" id="favorites">Add to Favorites</button>
+  </section>
+</section>
+
+<section class="lp-popupmain">
+  <section class="lp-Popup" id="lpPopup">
+    <img src="./Loyalty_Points.png">
+    <h4>Congratulations..!!</h4>
+    <p>Below is the amount of Loyalty Points received in relation to your booking.</p>
+    <fieldset class="form__container lpUpdate" id="lpUpdate"></fieldset>
+    <button type="button" id="lpokBtn">OK</button>
+  </section>
+  </section>
+
+
+        <!--footer section-->
+    <footer class="footer">
+          <section class="section__container footer__container">
+              <section class="footer__col">
+                  <img class="footer_logo" src="./logo-gold.png" alt="">
+                  <h3>The King's Hotels Group</h3>
+                  <h6>The King's Hotels Corparate Head Office</h6>
+                  <h6>No 37 Mudalige Mawatha Road,Colombo 07, Sri Lanka </h7>
+                  <h6>Email: enquiries@thekingshotel.com</h6>
+                  <h6>web:www.thekingshotel.lk</h6>
+              </section>
+              <section class="footer__col">
+                  <h4>Company</h4>
+                  <p>About Us</p>
+                  <p>Our Team</p>
+                  <p>Blog</p>
+                  <p>Book</p>
+                  <p>Contact Us</p>
+              </section>
+              <section class="footer__col">
+                  <h4>Legal</h4>
+                  <p>FAQs</p>
+                  <p>Terms & Conditions</p>
+                  <p>Privacy Policy</p>
+              </section>
+              <section class="footer__col">
+                  <h4>follow us</h4>
+                  <a href="#"><img src="./facebook.png" alt="logo of facebook"></a>
+                  <a href="#"><img src="./insta.png" alt="logo of instagram"></a>
+                  <a href="#"><img src="./twitter.png" alt="logo of twitter"></a>
+                  <a href="#"><img src="./linkdin.png" alt="logo of linkedin"></a>
+              </section>
+          </section>
+          <section class="footer__bar">
+              Copyright © 2023 The King's Hotel. All Rights Reserved.
+          </section>
+      </footer>
+
+      <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav_links')
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+
+    <script src="./main.js"></script>
+</body>
+</html>
