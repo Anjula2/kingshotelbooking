@@ -62,6 +62,9 @@ function init(){
 function calculateRoomCost() {
     const checkin = new Date(checkInDate.value);
     const checkout = new Date(checkOutDate.value);
+    if (checkout < checkin) {
+        alert("Kindly ensure that the depature date falls on or after the arrival date to proced with the reservation. Thank You..!!")
+    }
     const numDays = Math.ceil((checkout - checkin) / (1000 * 60 * 60 * 24)) || 1;
 
     const roomCost = (singleroomCost * numSingle.value) +
@@ -434,7 +437,7 @@ adFav.addEventListener("click", saveStorage);
 
 function saveStorage(){
     localStorage.setItem("Favorites", JSON.stringify(fvt));
-    alert("Your Details Successfuly Saved");
+    alert("Your Details Successfully Saved");
 }
 
 
